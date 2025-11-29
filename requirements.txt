@@ -1,0 +1,34 @@
+# ML Система Рекомендаций v2.0 - Зависимости
+
+# Основные библиотеки
+numpy>=1.21.0
+pandas>=1.3.0
+scipy>=1.7.0
+
+# Machine Learning
+scikit-learn>=1.0.0
+
+# Кластеризация
+hdbscan>=0.8.27
+umap-learn>=0.5.3
+
+# Визуализация
+matplotlib>=3.4.0
+seaborn>=0.11.0
+
+# Опциональные (для улучшения производительности)
+numba>=0.55.0  # Ускоряет UMAP и HDBSCAN
+pynndescent>=0.5.0  # Ускоряет UMAP
+
+# Для работы с данными
+pyarrow>=6.0.0  # Для чтения .pq файлов
+fastparquet>=0.8.0  # Альтернатива для .pq
+
+# ПРИМЕЧАНИЯ:
+# 1. Если hdbscan не устанавливается на Windows, попробуйте:
+#    conda install -c conda-forge hdbscan
+#
+# 2. Если numba падает с ошибкой, попробуйте:
+#    pip install numba --upgrade
+#
+# 3. Минимальная версия Python: 3.8+
